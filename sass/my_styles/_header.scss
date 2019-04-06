@@ -1,0 +1,113 @@
+.header {
+  z-index: 1000;
+  @media only screen and (min-width: 600px) {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
+  & .container {
+    flex-flow: column;
+    justify-content: space-between;
+    padding-top: 20px;
+    align-items: flex-start;
+    @media only screen and (min-width: 600px) {
+      align-items: center;
+      flex-flow: row wrap;
+    }
+  }
+  &__background {
+    background-color: #fff;
+  }
+  &__logo__wrapper {
+    max-width: 150px;
+    order: -2;
+    margin: 0 auto;
+    & img {
+      width: 100%;
+    }
+    @media only screen and (min-width: 600px) {
+      max-width: none;
+      order: 0;
+      margin: 0;
+    }
+  }
+}
+.menu {
+  display: none;
+  list-style: none;
+  &__show {
+    display: flex;
+    flex-direction: column;
+    @media only screen and (min-width: 768px) {
+      flex-direction: row;
+    }
+    & a {
+      padding: 10px 15px;
+      text-decoration: none;
+      color: $color-text-1;
+      font-family: $font-nunito;
+      font-size: 14px;
+      font-weight: 800;
+      text-transform: uppercase;
+      border-radius: 3px;
+      transition: 0.3s;
+      display: inline-block;
+      &:hover {
+        color: #ffffff;
+        background-color: $color-text-1;
+      }
+    }
+  }
+}
+.menu-toggle {
+  border: none;
+  font-size: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  outline: none;
+  transition: 0.3s;
+  background-color: transparent;
+  &:hover {
+    color: $color-text-2;
+  }
+}
+.main-navigation {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  z-index: 1000;
+  @media only screen and (min-width: 600px) {
+    position: relative;
+    align-items: center;
+  }
+}
+.menu-item {
+  margin: 0 10px;
+}
+.menu__show {
+  background-color: #fff;
+}
+#searchsubmit {
+  border: none;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 2px;
+  background-color: transparent;
+  &:hover {
+    background-color: $color-text-1;
+    color: #ffffff;
+  }
+}
+#search {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border-left: 1px solid $color-text-1;
+  @media only screen and (min-width: 600px) {
+    padding: 15px 50px;
+  }
+}

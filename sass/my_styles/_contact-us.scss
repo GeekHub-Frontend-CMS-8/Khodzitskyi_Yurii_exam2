@@ -1,0 +1,122 @@
+.contact-us {
+  & .container {
+    @media only screen and (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+  &__image-wrapper {
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 400px;
+    background-color: $color-text-1;
+    position: relative;
+    @media screen and (min-width: 768px){
+      height: auto;
+      max-width: 768px;
+      margin: 0 0;
+    }
+    & img {
+      width: 100%;
+      height: auto;
+    }
+    & h1 {
+      position: absolute;
+      top: 30%;
+      color: #ffffff;
+      font-family: $font-poppins;
+      font-size: 60px;
+      font-weight: 400;
+      @media screen and (min-width: 1120px){
+        font-size: 101px;
+        left: 30%;
+      }
+    }
+    &__btn {
+      right: 0;
+    }
+  }
+  &__text-wrapper {
+    margin: 40px auto 0;
+    max-width: 560px;
+    padding-left: 15px;
+    & p {
+      color: $color-text-1;
+      font-family: $font-poppins;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 36px;
+      &::first-letter {
+        initial-letter: 2;
+      }
+      @media screen and (min-width: 768px) {
+        margin: 200px auto 90px;
+      }
+    }
+  }
+  &__adresses-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    &__item {
+
+      display: flex;
+      margin: 10px 0;
+      width: 100%;
+      max-width: 240px;
+      & ul {
+        list-style: none;
+      }
+      & a{
+        color: #77777e;
+        font-family: $font-nunito;
+        font-size: 16px;
+        font-weight: 400;
+        text-decoration: none;
+        transition: 0.3s;
+        &:hover {
+          color: #bcbcd0;
+        }
+      }
+      & .fa {
+        margin-right: 10px;
+      }
+      @media screen and (min-width: 768px){
+        margin: 34px 0;
+      }
+    }
+    &__phones {}
+  }
+  &__right-absolute-block {
+    z-index: -1000;
+    position: absolute;
+    right: 0;
+    top: 20vh;
+    width: 240px;
+    height: 300px;
+    background-image: linear-gradient(-135deg, #b4d3d3 0%, #d9e7e7 100%);
+  }
+  &__newsletter-section {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__newsletter {
+      padding: 15px 10px 15px 40px;
+      border-left: 2px solid $color-text-2;
+      text-decoration: none;
+      color: $color-text-1;
+      font-family: $font-nunito;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      transition: 0.3s;
+      border-radius: 2px;
+      &:hover {
+        background-color: $color-text-2;
+      }
+      & .fa {
+        padding-left: 30px;
+      }
+    }
+  }
+}

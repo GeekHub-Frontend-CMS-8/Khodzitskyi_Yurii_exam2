@@ -1,0 +1,63 @@
+.container {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 0 10px;
+  display: flex;
+  flex-flow: column;
+}
+/*----fonts----*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,800');
+$font-nunito:'Nunito', sans-serif;
+$font-poppins:'Poppins', sans-serif;
+
+$color-text-1:#1a1a1d;
+$color-text-2:#87bbbc;
+
+body {
+  color: $color-text-1;
+  padding: 0 10px;
+}
+main {
+  min-height: 86vh;
+}
+/*-----scroll styles-----*/
+.scrolltop {
+  display:none;
+  width:100%;
+  margin:0 auto;
+  position:fixed;
+  bottom:20px;
+  right:10px;
+}
+.scroll {
+  position:absolute;
+  right:20px;
+  bottom:0;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(26, 26, 29, 0.13);
+}
+.scroll:hover {
+  background:rgba(178,178,178,1.0);
+  transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.scroll:hover .fa {
+  padding-top:-10px;
+}
+.scroll .fa {
+  font-size:30px;
+  margin-top:-5px;
+  margin-left:1px;
+  transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+}

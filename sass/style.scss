@@ -1,0 +1,45 @@
+/*!
+Theme Name: exam
+Theme URI: http://underscores.me/
+Author: Yurii Khodzitskyi
+Author URI: http://underscores.me/
+Description: geekhub
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: exam
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+ghhw is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+@import "reset";
+@import "variables-site/variables-site";
+@import "mixins/mixins-master";
+@import "mixins/variables";
+
+@import "site/secondary/widgets";
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+@import "site/site";
+
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+@import "modules/infinite-scroll";
+@import "my_styles/slick";
+@import "my_styles/header";
+
+@import "my_styles/footer";
+@import "my_styles/homepage";
+@import "my_styles/contact-us";
+@import "my_styles/single-blog";
